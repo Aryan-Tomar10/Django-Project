@@ -8,3 +8,6 @@ def buy_detail(request,buy_id):
 
 def user_profile(request,username):
     return HttpResponse(f"<h1>Profile of user : {username}</h1>")
+
+def section_by_years(request,year):
+    return HttpResponse(f"<h1>Section of year : {year}</h1>")

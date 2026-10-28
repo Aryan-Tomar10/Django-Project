@@ -1,5 +1,3 @@
-This is to call using URL Parameter Path
+This is to call using URL Parameter re_path
 
-http://127.0.0.1:8000/shop/name/aryan/
-
-http://127.0.0.1:8000/shop/buy/67/
+http://127.0.0.1:8000/shop/section/2024/
