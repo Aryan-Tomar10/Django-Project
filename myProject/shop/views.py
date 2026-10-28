@@ -11,3 +11,11 @@ def user_profile(request,username):
 
 def section_by_years(request,year):
     return HttpResponse(f"<h1>Section of year : {year}</h1>")
+
+
+# def section_details(request,**kwargs):
+#     return HttpResponse(f"<h1>Data : {kwargs['year']} - {kwargs['month']} - {kwargs['date']}")
+
+
+def section_details(request,**kwargs):
+    return HttpResponse(f"<h1>Data : {kwargs}</h1>")
