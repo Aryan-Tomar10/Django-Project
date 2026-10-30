@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2# Templates</title>
+  </head>
+  <body>
+    <h1>Blog Filter Page</h1>
+    {% comment %} Text Filter {% endcomment %}
+    <p><b>Title (Normal) : </b>{{post.title}}</p>
+    <p><b>Uppercase : </b>{{post.title|upper}}</p>
+    <p><b>Lowercase : </b>{{post.title|lower}}</p>
+    <p><b>Capitalisation : </b>{{post.title|capfirst}}</p>
+    <p><b>Title case : </b>{{post.title|title}}</p>
+
+    <p><b>TruncateChars : </b>{{post.title|truncatechars:10}}</p>
+    <p><b>TruncateWords : </b>{{post.title|truncatewords:1}}</p>
+    <p><b>Line Breaks : </b>{{post.title|linebreaks}}</p>
+  </body>
+</html>
