@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#1 Template Basics</title>
+  </head>
+  <body>
+    <h1>Templates Basics</h1>
+    <p>This is a simple template to demonstrate simple html structure</p>
+    <p>Name : {{name}}</p>
+    <p>User : {{user.name}}</p>
+    <p>Age : {{user.age}}</p>
+    <h1>Title : {{blog.title}}</h1>
+    <p>Skill 1 : {{skill.0}}</p>
+    <p>All Skill : {{skill}}</p>
+    <p>Creation date : {{blog.created_at}}</p>
+    <p>Content : {{blog.content}}</p>
+    <p>Content : {{blog.content|safe}}</p>
+
+    <h1>Default Value</h1>
+    <p>Default Empty Value : {{empty_value | default:"No Value Provided"}}</p>
+    <p>Default Empty Value : {{empty_value | default_if_none:"No Value"}}</p>
+  </body>
+</html>
