@@ -89,3 +89,71 @@ Benefits of ORM
 2. Database Independent - MySQL, Postgre SQL, SQLite ll are compitable
 3. Secure - Decreases the chances of SQL Injection
 4. Readable - Easy to maintain
+
+.
+.
+.
+.
+.
+A class which initialised with .py file which represent the table of database. is there is a table named student then its feield are like student_name, student_class, student_age etc anf these are alsorepresented in the model.
+.
+.
+.
+after making model we need to run following command:
+
+1. python3 manage.py makemigrations
+2. python3 manage.py migrate
+
+.
+.
+.
+How to retrieve data from the database
+Type the command in the terminal
+
+1. python3 manage.py shell
+
+**then in that shell enter the below commands**
+.
+**TO PRINT ALL DATA**
+from blog.models import Student
+student = Student.objects.all()
+print(student)
+for s in student:
+print(s.name,s.age,s.email,s.city)
+print(student,column_name1, column_name2...)
+.
+.
+.
+.
+**how to use get(single output only)**
+
+from blog.models import Student
+student = Student.objects.get()
+print(student)
+print(student.column_name1, student.column_name2...)
+.
+.
+.
+.
+
+**how to use Filter**
+
+from blog.models import Student
+student = Student.objects.filter(age = 30)
+print(student)
+.
+from blog.models import Student
+student = Student.objects.filter(age__gt = 30). #age greater than
+print(student)
+.
+from blog.models import Student
+student = Student.objects.filter(age__lt = 30). #age less than
+print(student)
+.
+from blog.models import Student
+student = Student.objects.filter(name__startswith='s'). #name starts with
+print(student)
+.
+from blog.models import Student
+student = Student.objects.filter(name__endswith='s'). #name starts with
+print(student)
