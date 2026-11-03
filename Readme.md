@@ -213,3 +213,4 @@ print(students)
 from blog.models import Student
 student = Student.objects.create(name = 'Aryan', age = 20, city = 'Delhi')
 print(students)
+.
