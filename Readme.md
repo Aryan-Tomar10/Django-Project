@@ -208,3 +208,8 @@ print(students)
 from blog.models import Student
 student = Student.objects.count()
 print(students)
+.
+**how to use create to input data in shell**
+from blog.models import Student
+student = Student.objects.create(name = 'Aryan', age = 20, city = 'Delhi')
+print(students)
