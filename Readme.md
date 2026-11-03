@@ -147,7 +147,7 @@ student = Student.objects.filter(age__gt = 30). #age greater than
 print(student)
 .
 from blog.models import Student
-student = Student.objects.filter(age__lt = 30). #age less than
+student = Student.objects.filter(age*__lt = 30). #age less than
 print(student)
 .
 from blog.models import Student
@@ -157,3 +157,54 @@ print(student)
 from blog.models import Student
 student = Student.objects.filter(name__endswith='s'). #name starts with
 print(student)
+
+.
+**how to use order_by**
+
+from blog.models import Student
+student = Student.objects.all().order_by("name"). #Ascending Order
+print(students)
+.
+from blog.models import Student
+student = Student.objects.all().order_by("-name"). #Decending Order
+print(students)
+.
+from blog.models import Student
+student = Student.objects.all().order_by("-name",'age). #Both and Decending Order
+print(students)
+
+.
+**how to do chaining**
+from blog.models import Student
+student = Student.objects.filter(city = "Delhi").filter(age__gt=20).order_by("name") #Decending Order
+print(students)
+
+**how to use order_by**
+from blog.models import Student
+student = Student.objects.exclude(city='Delhi')
+print(students)
+.
+**how to use values**
+from blog.models import Student
+student = Student.objects.values('name','city')
+print(students)
+.
+**how to use values**
+from blog.models import Student
+student = Student.objects.value_list('name',flat = True)
+print(students)
+.
+**how to use first**
+from blog.models import Student
+student = Student.objects.first()
+print(students)
+.
+**how to use last**
+from blog.models import Student
+student = Student.objects.last()
+print(students)
+.
+**how to use count**
+from blog.models import Student
+student = Student.objects.count()
+print(students)
