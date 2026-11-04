@@ -214,3 +214,5 @@ from blog.models import Student
 student = Student.objects.create(name = 'Aryan', age = 20, city = 'Delhi')
 print(students)
 .
+**How to create super user**
+python3 manage.py createsuperuser
