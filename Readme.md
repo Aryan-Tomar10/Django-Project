@@ -216,3 +216,24 @@ print(students)
 .
 **How to create super user**
 python3 manage.py createsuperuser
+.
+.
+.
+.
+.
+.
+what is middleware ??
+It is a hook system which work under every request and response
+
+when we open a website like www.google.com we reaise a request, till request reach a view.py there is a middleware(provide extra security) then it reaches view.
+
+Advantage:
+1. Authentication check(if the user is authorised or not)
+2. request/ response logging
+3. IP Blocking (if i want to block a particular IP or particular region or a particular country)
+4. Language or session management
+5. Performance timing
+.
+there are two typr of middleware
+1. Buildin Middleware
+2. Custom Middleware
