@@ -242,3 +242,8 @@ What are Django Signals?
 Django signals are a built-in notification system based on the publisher-subscriber pattern that lets decoupled applications get notified when specific actions occur elsewhere in the framework. There are two types of Django Signals:
 1. Pre-save signals
 2. Post-save signals
+.
+Session are used for server side rendering and cookies are used for client side rendering
+Cookes have data limit of 4 kb and session has no data limit 
+cookies are less secure and session are more secure
+Signaled cookies are more secure for security purpose.
