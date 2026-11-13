@@ -247,3 +247,4 @@ Session are used for server side rendering and cookies are used for client side 
 Cookes have data limit of 4 kb and session has no data limit 
 cookies are less secure and session are more secure
 Signaled cookies are more secure for security purpose.
+SMTP(Simple Mail Transfer Protocol) Configuration
