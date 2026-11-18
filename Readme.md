@@ -248,3 +248,32 @@ Cookes have data limit of 4 kb and session has no data limit
 cookies are less secure and session are more secure
 Signaled cookies are more secure for security purpose.
 SMTP(Simple Mail Transfer Protocol) Configuration
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'aryantomar1005@gmail.com'
+EMAIL_HOST_PASSWORD = 'Enter your password here' # Enter your application password not your email's password
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+.
+to know the password to be entered in EMAIL_HOST_PASSWORD
+open https://myaccount.google.com/apppasswords 
+type password 
+Enter the application name and when you will press enter then a password will appear enter that password in email_host_password
+.
+.
+.
+.
+Types of catche
+1. In-memory Catche(LocMemCache) (Fastest type of catche)
+    1. aching is a technique to store frequently access data temporarily so it can be served faster next time without reprocessing or hitting the database
+    2. It store data in django in the form of RAM
+    3. it is best if you are building small applications or local development
+    4. Limitation : It get cleared on process restart.
+2. File Based Cache
+    1. It is stored in files or files in the drive or disk's file
+    2. It remain persistent after server restart
+3. Cache Per View
+4. Template Fragment Cache
+5. Database Cache
+6. Third Party Cache(Reddis)
