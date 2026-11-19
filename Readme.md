@@ -276,6 +276,6 @@ Types of catche
 3. Per View Cache (This is the cache created for each and avery view)
     1. It is not a technique but it is a method which is applied using decorator
     2. It use both file-based cache and in-memory cache
-4. Template Fragment Cache
+4. Template Fragment Cache (if you want to make a particular part as cache)
 5. Database Cache
 6. Third Party Cache(Reddis)
