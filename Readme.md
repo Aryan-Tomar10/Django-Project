@@ -265,7 +265,7 @@ Enter the application name and when you will press enter then a password will ap
 .
 .
 Types of catche
-1. In-memory Catche(LocMemCache) (Fastest type of catche)
+1. In-memory Cache(LocMemCache) (Fastest type of catche)
     1. aching is a technique to store frequently access data temporarily so it can be served faster next time without reprocessing or hitting the database
     2. It store data in django in the form of RAM
     3. it is best if you are building small applications or local development
@@ -273,7 +273,9 @@ Types of catche
 2. File Based Cache
     1. It is stored in files or files in the drive or disk's file ,i.e, it doesn't save data in memory but save it in system's local file.
     2. It remain persistent after server restart
-3. Per View Cache
+3. Per View Cache (This is the cache created for each and avery view)
+    1. It is not a technique but it is a method which is applied using decorator
+    2. It use both file-based cache and in-memory cache
 4. Template Fragment Cache
 5. Database Cache
 6. Third Party Cache(Reddis)
