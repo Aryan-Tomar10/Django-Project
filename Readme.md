@@ -271,9 +271,9 @@ Types of catche
     3. it is best if you are building small applications or local development
     4. Limitation : It get cleared on process restart.
 2. File Based Cache
-    1. It is stored in files or files in the drive or disk's file
+    1. It is stored in files or files in the drive or disk's file ,i.e, it doesn't save data in memory but save it in system's local file.
     2. It remain persistent after server restart
-3. Cache Per View
+3. Per View Cache
 4. Template Fragment Cache
 5. Database Cache
 6. Third Party Cache(Reddis)
