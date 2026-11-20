@@ -278,4 +278,12 @@ Types of catche
     2. It use both file-based cache and in-memory cache
 4. Template Fragment Cache (if you want to make a particular part as cache)
 5. Database Cache
+    1. when we want persistant catche in our project then we use DB cache.
+    2. it is used when project is not too big but if the project is big then we should use Reddis
+    3. in this we get 3 fields 
+        1. Cache key
+        2. value
+        3. expires
+    4. Advantages : It is persistent. Cache is sage after restart. It is a shared cache(i.e can be shared between multiple server). It is debug friendly.
+    5. It is slowas it take time to read and write db. It is not good for large data. Use Reddis instead of this for production scale.
 6. Third Party Cache(Reddis)
