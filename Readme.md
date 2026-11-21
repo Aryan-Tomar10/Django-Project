@@ -294,8 +294,9 @@ Q1. What is REST(Representation State Transfer) API(Application Proframming Inte
 2. Common Rest API methods are :
     1. GET Method :- It is used to Fetch data
     2. POST Method :- It is used to create new record
-    3. PUT/ PATCH Method :- It is used to update the existing record.
-    4. DELETE Method :- It is used to delete the record.
+    3. PUT Method : It is used to modify all data at once,i.e, it will work if i will fire whole updated data
+    4. PATCH Method :- It is used to update the specific record based on ID
+    5. DELETE Method :- It is used to delete the record.
 Q2. What is Django REST Framework?
 1. it is a powerful and flexible toolkit to create restfull API in Django.
 2. It use Django's Model View Sirealise to serve json data.
