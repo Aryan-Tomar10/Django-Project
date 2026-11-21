@@ -309,3 +309,6 @@ Q3. Why use DRF?
 1. Normal Django template render HTML but DRF pprovide JSON format.
 2. If you want to provide API for react and mobile app then it is perfect 
 3. It you want to do CRUD operation or you want to create API then DRF is fast as it have clean code and is secure.
+
+What is the use of serializers.py?
+It is used to convert the models to json and vice-versa
