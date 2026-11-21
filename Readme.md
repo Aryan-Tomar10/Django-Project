@@ -287,3 +287,25 @@ Types of catche
     4. Advantages : It is persistent. Cache is sage after restart. It is a shared cache(i.e can be shared between multiple server). It is debug friendly.
     5. It is slowas it take time to read and write db. It is not good for large data. Use Reddis instead of this for production scale.
 6. Third Party Cache(Reddis)
+
+
+Q1. What is REST(Representation State Transfer) API(Application Proframming Interface)?
+1. It is a standard way to exchange data between client and server/ Database using Http Method. Client is the application which is made in react, mobile app, etc. 
+2. Common Rest API methods are :
+    1. GET Method :- It is used to Fetch data
+    2. POST Method :- It is used to create new record
+    3. PUT/ PATCH Method :- It is used to update the existing record.
+    4. DELETE Method :- It is used to delete the record.
+Q2. What is Django REST Framework?
+1. it is a powerful and flexible toolkit to create restfull API in Django.
+2. It use Django's Model View Sirealise to serve json data.
+Advantages
+1. It can serealise the data easily i.e, it convert python data into json
+2. It is important for authentication and permission and make ready make permission
+3. It provide API to the browser.
+4. It is easy installable with django ORM().
+5. It is user to make pagination, filtration, versioning support
+Q3. Why use DRF?
+1. Normal Django template render HTML but DRF pprovide JSON format.
+2. If you want to provide API for react and mobile app then it is perfect 
+3. It you want to do CRUD operation or you want to create API then DRF is fast as it have clean code and is secure.
